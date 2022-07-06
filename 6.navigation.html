@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    
+    <ul class="nav nav-pills justify-content-center border-bottom">  <!--nav-tabs -> linkin üstüne geldiğimizde bloğa border veriyor, nav-pills -> linklerden birine active özelliği verdiğimizde bg mavi font beyaz oluyor -->
+        <li class="nav-item">  <!--nav-item navigation'un içinde olması için-->
+            <a href="#" class="nav-link active">Elektronik</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Kültür & Sanat</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Kitap</a>
+        </li>
+        <li class="nav-item dropdown"> <!--açılır kapanır bir dropdown olması için dropdown classını ekliyoruz-->
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Sepet</a> <!--açılır kapanır özelliğini kullanmak için dropdown-toggle class'ı eklliyoruz ayrıca bir tane daha attribute girmemiz gerekiyor o da data-toggle="dropdown"-->
+            
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">1x Bilgisayar</a>
+                <a href="#" class="dropdown-item">2x Kulaklık</a>
+                <a href="#" class="dropdown-item">3x Kitap</a>
+                <div class="dropdown-divider"></div> <!--ürünlerle sepet'i border ve margin'le ayırıyor-->
+                <a href="#" class="d-flex justify-content-between align-items-center dropdown-item">Sepete Git
+                    <span class="badge badge-primary">6</span>
+                </a>
+            </div>
+        </li>
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
