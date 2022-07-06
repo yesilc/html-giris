@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> <!--Bootstrap4.4 ekledik-->
+    <style>
+        /* .btn{
+            border-radius: 10px;
+            margin: 0 1.5rem;
+        }
+        .container{
+            background-color: red;
+        } */
+        /* .box{
+            height: 200px;
+        }
+        div span{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+        } */
+
+
+    </style>
+</head>
+<body>
+    <!-- <h1>Heading</h1>
+    <button type="button" class="btn btn-primary">Primary</button> -->
+
+    <!-- <div class="container"> <--bootstrap'la beraber media ekitleri de hazır olarak geliyor yani ayrıca media etiketi yazmamıza gerek yok--
+        Container
+      </div> -->
+
+      <!-- <div class="container">
+        <-- Grid System --
+        <div class="row">
+            <-- <div class="box bg-danger col"></div> <--col sınıfını 3'üne de verdiğimiz için row'u eşit şekilde paylaşacaklar--
+            <div class="box bg-primary col"></div>
+            <div class="box bg-success col"></div> --
+                
+            <-- <div class="box bg-danger col-2"></div>
+            <div class="box bg-primary col-4"></div>
+            <div class="box bg-success col-6"></div>   row 12 parçadan oluşur col'un yanında verilen değerlere göre bloklar o kadar parçaya sahip olur. Eğer 12'den küçük değerler verilirse row'un kalan parçalırı boşluk olur doldurulmaz. Col değerleri 12'yi geçerse bloklar row'dan taşar --
+        
+        
+        </div> -->
+
+        <!-- <div class="container">
+            <div class="row">
+                <div class="box bg-danger col-sm"></div> !--sm'nin anlamı: Small ekranlara kadar row şeklinde dizil ama small ekrana geçince bu kutuların yönünü değiştir ve her kutuya width:100% ata. md ve lg sınıfları da var--
+                <div class="box bg-primary col-sm"></div>
+                <div class="box bg-success col-sm"></div>
+            </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="container">
+        <div class="row">
+            <div class="box bg-danger col-6 col-md-4"></div> <--sayfa medium(768px) durumuna geçene kadar kırmızı olan 4 parçaya mavi olan 8 parçaya sahip oldur. 768 ve aşağısında -> kırmızı col-6 özelliğini alır; mavi alan aşağı iner çünkü col özelliği vermedik--
+            <div class="box bg-primary col-md-8"></div>
+        </div>
+    </div> -->
+
+    <!-- Aligment -->
+
+    <!-- https://getbootstrap.com/docs/4.4/layout/grid/ -->
+    <!-- <div class="row align-items-start justify-content-between bg-dark" style="height: 600px;">  <--justify-content-[] | start->bloklar sol üstte, end->sağ üstte, center-> ortada, between ->space between (justify ile satırda align-items ile sütunda hizalama) --
+        <div class="box bg-danger col-2"></div> 
+        <div class="box align-self-end bg-primary col-2"></div> <--align-self-end -> seçilen element en aşağı iner--
+        <div class="box align-self-center bg-success col-2"></div>
+    </div>
+  </div> -->
+
+    <!--Bootstrap Flexbox-->
+
+    <!-- <div class="d-flex flex-column bg-dark" style="height: 600px; width: 600px;">  <--d(isplay)-flex -> flexbox özelliğini kullanmak için--
+        <span class="align-self-end"></span>
+        <span class="align-self-center"></span>
+        <span class="justify-self-end"></span>
+    </div> -->
+
+
+    <!-- padding, margin, background, text-color, -->
+
+    <!-- <div class="bg-dark p-1 text-light">content</div>   <--p-1 -> padding. her taraftan 0.25remlik padding uygular. p-2 0.5 padding. pl-1 -> sol taraftan padding, pr-1 -> sağ taraftan padding, px-1 -> sağ ve sol taraftan padding, py-1 -> aşağı ve yukardan padding. Aynı kurallar margin için de yapılabilir margin için m-1  --
+    <div class="bg-light p-2 text-primary">content</div>
+    <div class="bg-warning my-2 text-danger">content</div>
+    <div class="bg-primary mx-auto text-success" style="max-width: 700px;">content</div> <--width değerirne göre x ekseninde margin verir--
+    <div class="bg-danger text-warning">content</div> -->
+
+
+    <!-- Alert -->
+
+    <!-- <div class="alert alert-success">Başarılı bir şekilde giriş yaptınız</div>
+    <div class="alert alert-danger">Başarılı bir şekilde giriş yaptınız</div>
+    <div class="alert alert-primary">Başarılı bir şekilde giriş yaptınız</div>
+    <div class="alert alert-warning">Başarılı bir şekilde giriş yaptınız</div>
+    <div class="alert alert-info">Başarılı bir şekilde giriş yaptınız</div> -->
+
+    <!-- Buttons -->
+
+    <a href="#" class="btn btn-success btn-block">Button</a> 
+    <a href="a" class="btn btn-primary btn-sm">Button</a>
+    <a href="a" class="btn btn-danger btn-md">Button</a>
+    <a href="a" class="btn btn-warning btn-lg">Button</a>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
